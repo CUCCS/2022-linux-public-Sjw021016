@@ -56,7 +56,7 @@ cat /etc/os-release  #法四
 
 - 实验截图
 
-![Query_Release_basics](img/Query_Release_basics.png)
+![Query_Release_basics](img_new/Query_Release_basics.png)
 
 ---
 
@@ -73,7 +73,7 @@ uname -a          #法二
 
 - 实验截图
 
-![Query_Kernel_version_basic](img/Query_Kernel_version_basic.png)
+![Query_Kernel_version_basic](img_new/Query_Kernel_version_basic.png)
 
 从实验截图可知当前所用Ubuntu20.04的内核版本为：5.4.0-65-generic
 
@@ -87,7 +87,7 @@ uname -a          #法二
 ```
 ip a
 ```
-![Query_ip](img/Query_ip.png)
+![Query_ip](img_new/Query_ip.png)
 
 - 手动配置地址并生效
 
@@ -96,7 +96,7 @@ sudo vim /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 
 ```
-![change_ip](img/change_ip.png)
+![change_ip](img_new/change_ip.png)
 
 如果看到网卡enp0s3下面有参数dhcp4: true，说明该网卡开启了dhch地址分配
 
@@ -116,7 +116,7 @@ C:/Users/hp/Desktop/test.txt cuc@192.168.56101:remote_file
 
 2. 传输完成后会显示如下
 
-![local_virtualbox](img/local_virtualbox.png)
+![local_virtualbox](img_new/local_virtualbox.png)
 
 - 本机和远程 Linux 系统之间
 
@@ -134,7 +134,7 @@ cat 用于在标准输出（监控器或屏幕）上查看文件内容。
     pwd
     ```
     - 实验截图：
-  ![creat_text](img/creat_text.png)
+  ![creat_text](img_new/creat_text.png)
 
 2. 将远程linux系统的文件传输的本地
 
@@ -144,7 +144,7 @@ cat 用于在标准输出（监控器或屏幕）上查看文件内容。
   ```
 
 - 实验截图
-![scp_local_romate](img/scp_local_romate.png)
+![scp_local_romate](img_new/scp_local_romate.png)
 
 --- 
 
@@ -158,7 +158,7 @@ cat 用于在标准输出（监控器或屏幕）上查看文件内容。
   ssh-keygen -t rsa
   ```
   - 实验截图：
-  ![generate_key](img/generate_key.png)
+  ![generate_key](img_new/generate_key.png)
 
 - 配置免密登录
   - 代码如下：
@@ -167,10 +167,10 @@ cat 用于在标准输出（监控器或屏幕）上查看文件内容。
   ```
 
   - 实验截图：
-  ![ssh_.Passwordfree_login](img/ssh_.Passwordfree_login.png)
+  ![ssh_.Passwordfree_login](img_new/ssh_.Passwordfree_login.png)
 
 - 免密登录验证
-![Passwordfree_login](img/Passwordfree_login.png)
+![Passwordfree_login](img_new/Passwordfree_login.png)
 
 ---
 
