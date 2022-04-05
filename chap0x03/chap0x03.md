@@ -207,10 +207,10 @@ $ systemctl is-failed application.service
 # 显示某个 Unit 服务是否建立了启动链接
 $ systemctl is-enabled application.service
 ```
-[![asciicast](https://asciinema.org/a/Ro70SkfYPcdUVnj56bTUEe46L.svg)](https://asciinema.org/a/Ro70SkfYPcdUVnj56bTUEe46L)  
+[![asciicast](https://asciinema.org/a/x7AR3v24eizMSv59rbcMgPRP6.svg)](https://asciinema.org/a/x7AR3v24eizMSv59rbcMgPRP6) 
 
 三个查询状态的简单方法操作如下:
-[![asciicast](https://asciinema.org/a/KIFjoCA4PWcItbsVmJb5DOTMP.svg)](https://asciinema.org/a/KIFjoCA4PWcItbsVmJb5DOTMP)
+[![asciicast](https://asciinema.org/a/rkMGvGjtrvAywYmUwuaOnLKfR.svg)](https://asciinema.org/a/rkMGvGjtrvAywYmUwuaOnLKfR)
 
 ### *4.2Unit的管理*
 对于用户来说，最常用的是下面这些命令，用于启动和停止 Unit（主要是 service）。
@@ -243,7 +243,6 @@ $ systemctl show -p CPUShares httpd.service
 # 设置某个 Unit 的指定属性
 $ sudo systemctl set-property httpd.service CPUShares=500
 ```
-[![asciicast](https://asciinema.org/a/H3tl27zQW6S4NrHdK2aUzBMJk.svg)](https://asciinema.org/a/H3tl27zQW6S4NrHdK2aUzBMJk)
 
 ### *4.3unit的依赖关系*
 
@@ -440,7 +439,7 @@ Runlevel 6           |    runlevel6.target -> reboot.target
 >
 >（3）配置文件的位置，以前`init`进程的配置文件是`/etc/inittab`，各种服务的配置文件存放在`/etc/sysconfig`目录。现在的配置文件主要存放在`/lib/systemd`目录，在`/etc/systemd`目录里面的修改可以覆盖原始设置。
 
-[![asciicast](https://asciinema.org/a/2INzlKRz4dYWTYYjXQx155YFG.svg)](https://asciinema.org/a/2INzlKRz4dYWTYYjXQx155YFG)
+[![asciicast](https://asciinema.org/a/HLQLSb9YBabzfIh3f6PauFRTN.svg)](https://asciinema.org/a/HLQLSb9YBabzfIh3f6PauFRTN)
 
 ### *7. 日志管理*
 `Systemd `统一管理所有 Unit 的启动日志。带来的好处就是，可以只用`journalctl`一个命令，查看所有日志（内核日志和应用日志）。日志的配置文件是`/etc/systemd/journald.conf`。
@@ -528,13 +527,14 @@ $ sudo journalctl --vacuum-size=1G
 # 指定日志文件保存多久
 $ sudo journalctl --vacuum-time=1year
 ```
-[![asciicast](https://asciinema.org/a/EclIpoUq5hYPVRTX81Lb8VOFr.svg)](https://asciinema.org/a/EclIpoUq5hYPVRTX81Lb8VOFr)
+[![asciicast](https://asciinema.org/a/1Fxcdc0BxSRnxZMQ0aA12ABiK.svg)](https://asciinema.org/a/1Fxcdc0BxSRnxZMQ0aA12ABiK)
 ---
 
 ### *三、Systemd 入门教程：[实战篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)*
 
 
-[![asciicast](https://asciinema.org/a/RUSyYZcsaVLin3X1OiuzVcr4a.svg)](https://asciinema.org/a/RUSyYZcsaVLin3X1OiuzVcr4a)
+[![asciicast](https://asciinema.org/a/XvTI4y2rVVJirGHmMMhcjNuCh.svg)](https://asciinema.org/a/XvTI4y2rVVJirGHmMMhcjNuCh)
+
 ---
 
 ### *四、本章完成后的自查清单*
@@ -602,6 +602,7 @@ sudo systemctl start systemd-networkd.socket
 ```
 
 [![asciicast](https://asciinema.org/a/eTpCD6Hj8fZybKqfCXe6nV3pe.svg)](https://asciinema.org/a/eTpCD6Hj8fZybKqfCXe6nV3pe)
+
 - 如何通过systemd设置实现一个脚本在任何情况下被杀死之后会立即重新启动？实现杀不死？  
 
 >- no（默认值）：退出后不会重启
