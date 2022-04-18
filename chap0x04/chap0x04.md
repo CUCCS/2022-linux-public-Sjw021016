@@ -312,7 +312,14 @@ function task3-6 {
 - task3-5、task3-6
 ![task3-5](img/task3-5.png)
 
-- - 表格已写入`task3.md`
+- 表格已写入`task3.md`
+
+### 构建Travis CI
+
+查看链接：[Travis CI](https://app.travis-ci.com/)  
+可查看脚本的自动执行情况。
+![Travis CI](img/TravisCI.png)
+
 ---
 ## 实验遇到的问题
 
