@@ -36,6 +36,10 @@ script:
   - bash task3.sh -c 
   - bash task3.sh -f 
   - bash task3.sh -s /whats-new.html
+  - echo "============================================="
+  - shellcheck task1.sh
+  - shellcheck task2.sh
+  - shellcheck task3.sh
 notifications:
   email:
     on_success: never
